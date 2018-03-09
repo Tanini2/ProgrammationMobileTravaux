@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Superhéros</title>
+<link rel="stylesheet" type="text/css" href="SuperHeros.css">
+<link rel="icon" type="image/ico" href="img/icone.ico"/>
+<script src="SuperHeros.js"></script>
+</head>
+
+<body onload="Load()">
+
+ <header>
+	<img class = "IMG1" src = "./img/icone.ico">
+	<img class = "IMG2" src = "./img/icone.ico">
+	<h1>Mes 5 héros préférés</h1>
+	<h4>Tanya Vanier</h4>
+ </header>
+ <nav>
+	<ul id="Navigation">
+		<li><button class = "bouton" id = "Deadpool" >Deadpool</button></li>
+		<li><button class = "bouton" id = "Raven" >Raven</button></li>
+		<li><button class = "bouton" id = "Chewbacca">Chewbacca</button></li>
+		<li><button class = "bouton" id = "Thor">Thor</button></li>
+		<li><button class = "bouton" id = "Hulk">Hulk</button></li>
+	</ul>
+ </nav>
+ <section class = "Contenu" tabindex="1">
+	<section class = "Description">
+		<h2 id="NomDeHeros">Heros Name :
+			<p></p>
+		</h2>
+		<h2 id="VraiNom">Real Name :
+			<p></p>
+		</h2>
+		<h2 id="PlaceOfBirth">Place of birth :
+			<p></p>
+		</h2>
+		<h2 id="FirstAppeareance">First appeareance :
+			<p></p>
+		</h2>
+		<h2 id="EyeColor">Eye Color :
+			<p></p>
+		</h2>
+		<h2 id="Pouvoirs">Powers :
+			<p></p>
+		</h2>
+	</section>
+	<section id = "Image">
+	</section>
+	<section class = "AlliesEnnemis">
+		<h2 id="Allies">Allies : 
+			<p></p>
+		</h2>
+		<h2 id="Ennemies">Enemies : 
+			<p></p>
+		</h2>
+	</section>
+ </section>
+ <!--
+	J'ai transféré le script à la fin car 'addEventListener ne fonctionnait pas
+	Tu regarderas avec ton prof si il y a un autre moyen
+ -->
+</body>
+ 
+</html>

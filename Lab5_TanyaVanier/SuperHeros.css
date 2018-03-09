@@ -1,0 +1,110 @@
+button#Deadpool{
+	background-image : url("./img/Deadpool.jpg");
+	background-position : 50% 25%;
+}
+
+button#Raven{
+	background-image : url("./img/Raven.jpg");
+	background-position : 50% 20%;
+}
+
+button#Chewbacca{
+	background-image : url("./img/Chewbacca.jpeg");
+	background-position : 70% 35%;
+}
+
+button#Thor{
+	background-image : url("./img/Thor.jpg");
+	background-position : 30% 10%;
+}
+
+button#Hulk{
+	background-image : url("./img/Hulk.jpg");
+	background-position : 70% 12%;
+	
+}
+
+button{
+	color : white;
+	height : 108px;
+	width : 350px;
+	font-size : xx-large;
+	margin-top : 5px;
+	margin-bottom : 5px;
+	border : black solid 2px;
+}
+h1, h4{
+	text-align : center;
+	color : white;
+}
+ 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+	display : inline-block;
+	float:left;
+	text-align : center;
+}
+
+.IMG1{
+	float:right;
+	display : inline-block;
+	height : 100px;
+	width : 100px;
+}
+
+.IMG2{
+	float:left;
+	display : inline-block;
+	height : 100px;
+	width : 100px;
+}
+nav{
+	float : left;
+}
+
+header{
+	display : block;
+	border : 2px solid black;
+	text-align : center;
+	color : darkgrey;
+	background-color : DarkRed;
+}
+
+body{
+	background-color : Navy;
+	color : white;
+}
+
+.Contenu{
+	outline: none;
+}
+
+.Description{
+	border : 2px black solid;
+	float:left;
+	width : 50%;
+	height : 400px;
+	margin-left : 3px;
+	margin-top : 3px;
+}
+
+.Image{
+	border : 2px black solid;
+	float : left;
+	width: 25%;
+	height: 400px;
+	margin-top : 3px;
+}
+
+.AlliesEnnemis{
+	border : 2px black solid;
+	float : left;
+	width: 75%;
+	height: 150px;
+	margin-left : 3px;
+	margin-top : 3px;
+}
