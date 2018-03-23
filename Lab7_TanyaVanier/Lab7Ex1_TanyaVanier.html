@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Mon formulaire</title>
+<script src="Lab7_TanyaVanier.js"></script>
+</head>
+
+<body>
+	<form method="get" onsubmit="return test1(this, event)">
+		<fieldset>
+			<legend>Inscription</legend>
+			<label for="username">Nom d'utilisateur: </label><input id="username" name="username" type="text" placeholder="Patate123"/>
+			<br />
+			<label for="pwd">Mot de passe: </label><input id="pwd" name="pwd" type="password" placeholder="P@t@te12E"/>
+			<br />
+			<label for="name">Nom: </label><input id="name" name="name" type="text" placeholder="Vanier"/>
+			<br />
+			<label for="firstname">Prénom: </label><input id="firstname" name="firstname" type="text" placeholder="Tanya"/>
+			<br />
+			<label for="email">Adresse courriel: </label><input id="email" name="email" type="email" placeholder="tanya67@hotmail.com"/>
+			<br />
+			<label for="tel">Numéro de téléphone: </label><input id="tel" name="tel" type="tel" placeholder="418-XXX-XXXX"/>
+			<br />
+			<label for="date">Date de naissance: </label><input id="date" name="date" type="date"/>
+			<br />
+			<br />
+			<input id="reset" type="reset" value="Reset"/>
+			<input id="submit" type="submit"/>
+		</fieldset>
+	</form>
+	<br />
+	<br />
+	<form method="get" onsubmit="return test2(this)">
+		<fieldset>
+			<legend>Connexion</legend>
+			<label for="usernameCo">Nom d'utilisateur: </label><input id="usernameCo" name="usernameCo" type="text" placeholder="Patate123"/>
+			<br />
+			<label for="pwdCo">Mot de passe: </label><input id="pwdCo" name="pwdCo" type="password" placeholder="P@t@te12E"/>
+			<br />
+			<br />
+			<input id="reset" type="reset" value="Reset"/>
+			<input id="submit" type="submit"/>
+		</fieldset>
+	</form>
+</body>
+ 
+</html>
