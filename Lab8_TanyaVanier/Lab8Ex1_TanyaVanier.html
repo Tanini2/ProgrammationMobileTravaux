@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Mon formulaire</title>
+<script src="Lab8_TanyaVanier.js"></script>
+</head>
+
+<body>
+	<form method="get" onsubmit="return test1(this, event)">
+		<fieldset>
+			<legend>Inscription</legend>
+			<label for="username">Nom d'utilisateur: </label><input onblur="ValiderEx1(this)" onfocus ="EffacerContenu(this)" id="username" name="username" type="text" placeholder="Patate123"/>
+			<label id="VerifNomU"></label>
+			<br />
+			<label for="pwd">Mot de passe: </label><input onblur="ValiderEx1(this)" onfocus ="EffacerContenu(this)" id="pwd" name="pwd" type="password" placeholder="P@t@te12E"/>
+			<label id="VerifMotP"></label>
+			<br />
+			<label for="name">Nom: </label><input onblur="ValiderEx1(this)" onfocus ="EffacerContenu(this)" id="name" name="name" type="text" placeholder="Vanier"/>
+			<label id="VerifNom"></label>
+			<br />
+			<label for="firstname">Prénom: </label><input onblur="ValiderEx1(this)" onfocus ="EffacerContenu(this)" id="firstname" name="firstname" type="text" placeholder="Tanya"/>
+			<label id="VerifPrenom"></label>
+			<br />
+			<label for="email">Adresse courriel: </label><input onblur="ValiderEx1(this)" onfocus ="EffacerContenu(this)" id="email" name="email" type="email" placeholder="tanya67@hotmail.com"/>
+			<label id="VerifAdresseC"></label>
+			<br />
+			<label for="tel">Numéro de téléphone: </label><input onblur="ValiderEx1(this)" onfocus ="EffacerContenu(this)" id="tel" name="tel" type="tel" placeholder="(418)XXX-XXXX"/>
+			<label id="VerifNumeroT"></label>
+			<br />
+			<label for="date">Date de naissance: </label><input onblur="ValiderEx1(this)" onfocus ="EffacerContenu(this)" id="date" name="date" type="date"/>
+			<label id="VerifDateN"></label>
+			<br />
+			<br />
+			<input id="reset" type="reset" value="Reset"/>
+			<input id="submit" type="submit"/>
+		</fieldset>
+	</form>
+	<br />
+	<br />
+	<form method="get" onsubmit="return test2(this)">
+		<fieldset>
+			<legend>Connexion</legend>
+			<label for="usernameCo">Nom d'utilisateur: </label><input id="usernameCo" name="usernameCo" type="text" placeholder="Patate123"/>
+			<br />
+			<label for="pwdCo">Mot de passe: </label><input id="pwdCo" name="pwdCo" type="password" placeholder="P@t@te12E"/>
+			<br />
+			<br />
+			<input id="reset" type="reset" value="Reset"/>
+			<input id="submit" type="submit"/>
+		</fieldset>
+	</form>
+</body>
+ 
+</html>

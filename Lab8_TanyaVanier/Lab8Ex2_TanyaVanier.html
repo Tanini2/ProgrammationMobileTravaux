@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Mon formulaire</title>
+<script src="Lab8_TanyaVanier.js"></script>
+</head>
+
+<body>
+	<form method="get" onsubmit="return test3(this, event)">
+		<fieldset>
+			<legend>Informations sur le produit</legend>
+			<label for="NomP">Nom du produit: </label>
+			<select id="NomP" name="NomP" onblur="ValiderEx2(this)" onchange = "ModifPrix()">
+				<option value="Phar">Phar</option>
+				<option value="Ma">Ma</option>
+				<option value="Co">Co</option>
+				<option value="Lo">Lo</option>
+				<option value="Gie">Gie</option>
+			</select>
+			<label id="VerifNomP"></label>
+			<br />
+			<label for="Couleur">Couleur du produit: </label>
+			<select id="Couleur" name="Couleur" onchange="ChangementCouleur(this)">
+				<option value="Rouge">Rouge</option>
+				<option value="Bleu">Bleu</option>
+				<option value="Vert">Vert</option>
+				<option value="Jaune">Jaune</option>
+				<option value="Mauve">Mauve</option>
+				<option value="Rose">Rose</option>
+				<option value="Blanc">Blanc</option>
+				<option value="Orange">Orange</option>
+			</select>
+			<label for="CouleurH">Hexadécimal: </label><input onchange="ChangementCouleurH(this)" id="CouleurH" name ="CouleurH" type="text"/>
+			<label id="ErreurCouleur"></label>
+			<br />
+			<label for="Quantite">Quantité commandée: </label><input onblur="ValiderEx2(this)" onchange="ModifPrix()" id="Quantite" name="Quantite" type="text"/>
+			<label id="VerifQuantite"></label>
+		</fieldset>
+		<fieldset>
+			<legend>Informations sur le client</legend>
+			<label for="NomC">Nom du client: </label><input onblur="ValiderEx2(this)" id="NomC" name="NomC" type="text" placeholder="Iron Man"/>
+			<label id="VerifNomC"></label>
+			<br />
+			<label for="Email">E-mail du client: </label><input onblur="ValiderEx2(this)" type="email" id="Email" name="Email" placeholder="IronMan@hotmail.com"/>
+			<label id="VerifEmail"></label>
+			<br />
+			<label for="Adresse">Adresse de livraison: <textarea onblur="ValiderEx2(this)" id="Adresse" name="Adresse" rows=3></textarea></label>
+			<label id="VerifAdresse"></label>
+		</fieldset>
+		<fieldset>
+			<legend>Calcul du prix total</legend>
+			<label for="SousTotal">Sous-Total: </label><input id="SousTotal" name="SousTotal" type="text" disabled />
+			<br />
+			<label for="Taxes">Taxes: </label><input id="Taxes" name="Taxes" type="text" disabled />
+			<br />
+			<label for="Total">Total: </label><input id="Total" name="Total" type="text" disabled />
+			<br />
+			<br />
+			<button id="send" type="button" onclick="Envoyer()">Envoyer</button>
+			<input id="reset" type="reset" value="Recommencer"/>
+			<input id="submit" type="submit" value="Calculer"/>
+		</fieldset>
+	</form>
+</body>
+ 
+</html>
